@@ -17,3 +17,27 @@ window.addEventListener('scroll', () => {
         navbar.style.boxShadow = 'none';
     }
 });
+
+const menuOpen = document.getElementById('menuOpen');
+const menuClose = document.getElementById('menuClose');
+const sidebar = document.getElementById('sidebar');
+const overlay = document.getElementById('overlay');
+const body = document.body;
+
+// 開啟選單
+function openSidebar() {
+    sidebar.classList.add('active');
+    overlay.classList.add('active');
+    body.classList.add('no-scroll'); // 防止底層網頁捲動
+}
+
+// 關閉選單
+function closeSidebar() {
+    sidebar.classList.remove('active');
+    overlay.classList.remove('active');
+    body.classList.remove('no-scroll');
+}
+
+menuOpen.addEventListener('click', openSidebar);
+menuClose.addEventListener('click', closeSidebar);
+overlay.addEventListener('click', closeSidebar); // 點擊深色遮罩也能關閉
