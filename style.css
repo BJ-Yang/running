@@ -213,10 +213,11 @@ body {
 .course-info .btn {
     /* 1. 核心修正：讓按鈕根據內容寬度縮放，不再撐滿 */
     display: inline-block;
-    align-self:center ; /* 讓按鈕靠右對齊flex-end，且寬度僅包圍文字 */
+    width: 40%;
+    align-self:flex-start ; /* 讓按鈕靠右對齊flex-end，置中center且寬度僅包圍文字 */
     
     /* 2. 調整內距：讓按鈕看起來更修長、俐落 */
-    padding: 10px 25px; 
+    padding: 5px 5px; 
     
     /* 3. 字體調整 */
     font-size: 0.9rem;
