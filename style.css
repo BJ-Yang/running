@@ -73,7 +73,7 @@ body {
     position: relative;
     height: 45vh;
     background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
-                url('https://media.istockphoto.com/id/904527334/photo/your-health-depends-on-it.jpg?s=612x612&w=is&k=20&c=SeQzPrJFjhAQMNYtkoVdwA6ouxBQ2r43IoQi901hlBE=');
+                url('https://images.unsplash.com/photo-1769284331730-9955c15e7dac?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
     background-size: cover;
     background-position: center;
     display: flex;
