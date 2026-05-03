@@ -1,0 +1,152 @@
+/* 基礎設定 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+body {
+    background-color: #fff;
+    color: #111;
+    line-height: 1.6;
+}
+
+/* 導覽列 */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 5%;
+    background: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 900;
+    letter-spacing: -1px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #111;
+    font-weight: 700;
+    margin-left: 30px;
+    font-size: 0.9rem;
+}
+
+/* 優惠條 */
+.promo-bar {
+    background: #f5f5f5;
+    text-align: center;
+    padding: 10px;
+    font-size: 0.85rem;
+    border-bottom: 1px solid #ddd;
+}
+
+.promo-bar a {
+    color: #111;
+    font-weight: 700;
+}
+
+/* 英雄區 */
+.hero {
+    height: 80vh;
+    background: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), 
+                url('https://images.unsplash.com/photo-1552674605-db6ffd4facb5?auto=format&fit=crop&w=1200&q=80');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: flex-end;
+    padding: 5% 5% 10% 5%;
+}
+
+.hero-content h1 {
+    font-size: 3.5rem;
+    font-weight: 900;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.hero-content p {
+    max-width: 500px;
+    font-size: 1.1rem;
+    margin-bottom: 25px;
+}
+
+/* 按鈕樣式 */
+.btn {
+    padding: 12px 28px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 700;
+    display: inline-block;
+    transition: 0.3s;
+    margin-right: 10px;
+}
+
+.btn-dark {
+    background: #111;
+    color: #fff;
+}
+
+.btn-dark:hover {
+    background: #444;
+}
+
+.btn-outline {
+    border: 1px solid #111;
+    color: #111;
+}
+
+/* 區塊設定 */
+.section {
+    padding: 80px 5%;
+}
+
+.section-title {
+    font-size: 2rem;
+    margin-bottom: 40px;
+    font-weight: 900;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: #f9f9f9;
+    padding: 40px;
+    border-radius: 4px;
+}
+
+/* 廣告區 */
+.ad-space {
+    padding: 20px 5%;
+}
+
+.ad-placeholder {
+    background: #eee;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #999;
+    font-size: 0.8rem;
+}
+
+/* 響應式 */
+@media (max-width: 768px) {
+    .hero-content h1 { font-size: 2.5rem; }
+    .nav-links { display: none; } /* 簡化手機版 */
+}
